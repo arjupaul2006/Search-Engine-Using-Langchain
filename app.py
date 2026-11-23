@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 groq_api_key = st.secrets['GROQ_API_KEY']
-llm = ChatGroq(model='llama-3.3-70b-versatile', api_key=groq_api_key, streaming=True)
+llm = ChatGroq(model='openai/gpt-oss-120b', api_key=groq_api_key, streaming=True)
 
 # Create Arxiv and Wikipedia Tools
 arxiv_wrapper = ArxivAPIWrapper(top_k_results=1, doc_content_chars_max=200)
