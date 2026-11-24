@@ -43,7 +43,7 @@ if prompt := st.chat_input(placeholder='What is Machine Learning?'):
         tools=tools, 
         llm=llm, 
         agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION, 
-        handling_parsing_errors=True,
+        handle_parsing_errors=True,
         verbose=True
     )
 
